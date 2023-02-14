@@ -9,7 +9,7 @@ var {
 
 describe("restaurant.js", function() {
   describe("createRestaurant", function() {
-    it.skip("should be a function", function () {
+    it("should be a function", function () {
       assert.isFunction(createRestaurant);
     });
 

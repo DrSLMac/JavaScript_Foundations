@@ -1,7 +1,9 @@
-
+function createRestaurant() {
+  
+}
 
 module.exports = {
-    // createRestaurant, 
+    createRestaurant, 
     // addMenuItem,
     // removeMenuItem
   }
