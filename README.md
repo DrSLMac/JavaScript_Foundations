@@ -53,11 +53,12 @@
         - - [ ] astronomy
         - - [ ] ultima
         - - [ ] dinosaurs
-- [jsFunner](https://github.com/emilyjmiles/jsFunner-revisited)
+- [jsFunner](https://github.com/DrSLMac/JavaScript_Foundations/tree/main/jsFunner)
     - - [ ] cities
     - - [ ] slackChannels
     - - [ ] fitnessCenter
 - [Codewars Exercises](https://frontend.turing.edu/projects/module-2/code-wars.html)
+## Level 8
     - - [ ] Find numbers which are divisible by given number
     - - [ ] Even or Odd
     - - [ ] String repeat
@@ -83,6 +84,7 @@
     - - [ ] Beginner Series #2 Clock
     - - [ ] Sort and Star
     - - [ ] Array plus array
+    ## Level 7
     - - [ ] Get the Middle Character
     - - [ ] Vowel Count
     - - [ ] Highest and Lowest
@@ -112,6 +114,7 @@
     - - [ ] Find the capitals
     - - [ ] The Office I
     - - [ ] Convert Hash To An Array
+    ## Level 6
     - - [ ] Decode the Morse code
     - - [ ] Sort My Animals
     - - [ ] Stop gninnipS My sdroW!
