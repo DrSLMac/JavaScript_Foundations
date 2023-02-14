@@ -60,7 +60,7 @@
 - [Codewars Exercises](https://frontend.turing.edu/projects/module-2/code-wars.html)
 
     #### Level 8
-    - - [ ] Find numbers which are divisible by given number
+    - - [X] Find numbers which are divisible by given number
     - - [ ] Even or Odd
     - - [ ] String repeat
     - - [ ] Remove First and Last Character
