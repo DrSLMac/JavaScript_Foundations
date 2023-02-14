@@ -36,7 +36,7 @@
 
 ### Mod 2 Foundations
 
-- [jsFun](https://github.com/emilyjmiles/jsFun-revisited)
+- [jsFun](https://github.com/DrSLMac/JavaScript_Foundations/tree/main/jsFun)
     - - [ ] Scope
     - Prototypes
         - - [ ] kitties and puppers
