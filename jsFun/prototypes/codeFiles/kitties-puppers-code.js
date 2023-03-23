@@ -4,13 +4,16 @@ const { puppers } = require('../datasets/puppers');
 const kittyPrompts = {
   // Return an array of just the names of kitties who are orange.
   // ex: ['Tiger', 'Snickers']
-  orangePetNames() {
-
+  orangePetNames(animals) {
+    const orangeAnimals = animals
+      .filter((youngin) => youngin.color === 'orange')
+      .map(kit => kit.name)
+    return orangeAnimals
   },
 
   // Sort the kitties by their age.
-  sortByAge() {
-
+  sortByAge(animals) {
+    return animals.sort((a, b) => b.age - a.age)
   },
 
   // Return an array of kitties who have all grown up by 2 years.
@@ -19,8 +22,12 @@ const kittyPrompts = {
   //  { name: 'Tiger', age: 7, color: 'orange' }, 
   //  ...etc
   // ]
-  growUp() {
-
+  growUp(kitties) {
+    const grownKitties = kitties.map((kitty) => {
+      kitty.age += 2;
+      return kitty
+    })
+    return grownKitties
   }
 };
 

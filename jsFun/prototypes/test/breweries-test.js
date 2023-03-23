@@ -5,13 +5,13 @@ const { breweries } = require('../datasets/breweries');
 const breweryPrompts = require('../codeFiles/breweries-code');
 
 describe("Brewery Prompts", () => {
-  it.skip("should return the total beer count for all breweries", () => {
+  it("should return the total beer count for all breweries", () => {
     const e = breweryPrompts.getBeerCount();
 
     expect(e).to.deep.equal(40);
   });
 
-  it.skip("should return a list of all breweries and their beer count", () => {
+  it("should return a list of all breweries and their beer count", () => {
     const e = breweryPrompts.getBreweryBeerCount();
 
     expect(e).to.deep.equal([{
@@ -32,7 +32,7 @@ describe("Brewery Prompts", () => {
     }]);
   });
 
-  it.skip("should return the beer count for a given brewery", () => {
+  it("should return the beer count for a given brewery", () => {
     const ratioCount = breweryPrompts.getSingleBreweryBeerCount('Ratio Beerworks');
     const plattCount = breweryPrompts.getSingleBreweryBeerCount('Platt Park Brewing Co.');
 
@@ -40,7 +40,7 @@ describe("Brewery Prompts", () => {
     expect(plattCount).to.equal(7);
   });
 
-  it.skip("should return the beer with the highest ABV from all breweries", () => {
+  it("should return the beer with the highest ABV from all breweries", () => {
     const e = breweryPrompts.findHighestAbvBeer();
 
     expect(e).to.deep.equal({

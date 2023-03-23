@@ -9,7 +9,12 @@ const modPrompts = {
   //   { mod: 4, studentsPerInstructor: 8 }
   // ]
   studentsPerMod() {
-
+    const modified = mods.map((mod, idx) => {
+      return { mod: idx + 1,
+              studentsPerInstructor: mod.students/mod.instructors
+      }
+    })
+    return modified
   }
 };
 
