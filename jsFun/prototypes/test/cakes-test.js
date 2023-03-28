@@ -5,7 +5,7 @@ const { cakes } = require('../datasets/cakes');
 const cakePrompts = require('../codeFiles/cakes-code');
 
 describe("Cake Prompts", () => {
-  it.skip("should return a list of cakes with the flavor and number of that flavor in stock", () => {
+  it("should return a list of cakes with the flavor and number of that flavor in stock", () => {
     const e = cakePrompts.stockPerCake();
 
     expect(e).to.deep.equal([{
@@ -29,7 +29,7 @@ describe("Cake Prompts", () => {
     }]);
   });
 
-  it.skip("should return a list of only the cakes in stock", () => {
+  it("should return a list of only the cakes in stock", () => {
     const e = cakePrompts.onlyInStock();
 
     expect(e).to.deep.equal([{
@@ -59,13 +59,13 @@ describe("Cake Prompts", () => {
     }]);
   });
 
-  it.skip("should return the total inventory amount of all cakes in stock", () => {
+  it("should return the total inventory amount of all cakes in stock", () => {
     const e = cakePrompts.totalInventory();
 
     expect(e).to.deep.equal(59);
   });
 
-  it.skip("should return a list of all unique toppings needed to bake every flavor of cake", () => {
+  it("should return a list of all unique toppings needed to bake every flavor of cake", () => {
     const e = cakePrompts.allToppings();
 
     expect(e).to.deep.equal(["dutch process cocoa", "toasted sugar", "smoked sea salt", "berries", "edible flowers", "mint", "cranberry", "crystallized ginger"]);

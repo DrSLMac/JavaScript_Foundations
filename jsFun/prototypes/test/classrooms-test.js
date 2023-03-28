@@ -5,7 +5,7 @@ const { classrooms } = require('../datasets/classrooms');
 const classPrompts = require('../codeFiles/classrooms-code');
 
 describe("Class Prompts", () => {
-  it.skip("should return a list of all front-end classrooms", () => {
+  it("should return a list of all front-end classrooms", () => {
     const e = classPrompts.feClassrooms();
 
     expect(e).to.deep.equal([{
@@ -27,7 +27,7 @@ describe("Class Prompts", () => {
     }]);
   });
 
-  it.skip("should return key value pairs for each program and its total capacity", () => {
+  it("should return key value pairs for each program and its total capacity", () => {
     const e = classPrompts.totalCapacities();
 
     expect(e).to.deep.equal({
@@ -36,7 +36,7 @@ describe("Class Prompts", () => {
     });
   });
 
-  it.skip("should return a list of classrooms from smallest to largest capacity", () => {
+  it("should return a list of classrooms from smallest to largest capacity", () => {
     const e = classPrompts.sortByCapacity();
 
     expect(e).to.deep.equal([{

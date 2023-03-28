@@ -9,7 +9,17 @@ const classPrompts = {
   //   { roomLetter: 'G', program: 'FE', capacity: 29 }
   // ]
   feClassrooms() {
+    const fe = classrooms.filter((program) => {
+      return program.program === 'FE'
+    })
+    return fe
+  },
 
+  beClassrooms() {
+    const be = classrooms.filter((program) => {
+      return program.program === 'BE'
+    })
+    return be
   },
 
   // Create an object where the keys are 'feCapacity' and 'beCapacity', and the values are the total capacity for all classrooms in each program.
@@ -18,12 +28,20 @@ const classPrompts = {
   //   beCapacity: 96
   // }
   totalCapacities() {
-
+    const capacity = classrooms.reduce((newObj, curr) => {
+      newObj.feCapacity = this.feClassrooms().reduce((total, room) => total += room.capacity, 0)
+      newObj.beCapacity = this.beClassrooms().reduce((total, room) => total += room.capacity, 0)
+      return newObj
+    }, {})
+    return capacity
   },
 
   // Return the array of classrooms sorted by their capacity (least capacity to greatest).
   sortByCapacity() {
-
+    const sorted = classrooms.sort((a, b) => {
+      return a.capacity - b.capacity
+    })
+    return sorted
   }
 };
 
