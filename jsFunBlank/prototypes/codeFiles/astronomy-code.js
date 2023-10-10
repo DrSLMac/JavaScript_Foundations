@@ -10,9 +10,7 @@ const astronomyPrompts = {
   // ]
   starsInConstellations() {
 //if the object constellations, includes stars[i].name, push the stars[i] into an array
-    let starArr = [];
-    const constells = Object.keys(constellations);
-    console.log("constells: ", constells)
+  
   },
 
   // Return an object with keys of the different colors of the stars, whose values are arrays containing the star objects that match.

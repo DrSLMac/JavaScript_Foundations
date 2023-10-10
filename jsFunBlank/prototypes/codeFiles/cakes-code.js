@@ -8,11 +8,7 @@ const cakePrompts = {
   //    ..etc
   // ]
   stockPerCake() {
-    const getStock = cakes.map((supply) => {
-      return {flavor: supply.cakeFlavor,
-            inStock: supply.inStock}
-    })
-    return getStock
+    
   },
 
   // Return an array of only the cakes that are in stock.
@@ -34,30 +30,19 @@ const cakePrompts = {
   // ..etc
   // ]
   onlyInStock() {
-    return cakes.filter(cake => cake.inStock > 0)
+    
   },
 
   // Return the total amount of cakes in stock.
   // Answer: 59
   totalInventory() {
-    return howMany = cakes.reduce((total, current) => {
-      total += current.inStock
-      return total
-    }, 0)
+    
   },
 
   // Return an array of all unique toppings (no duplicates) needed to bake every cake in the dataset.
   // ex: ['dutch process cocoa', 'toasted sugar', 'smoked sea salt', 'berries', ..etc]
   allToppings() {
-    let combinedToppings = [];
-    cakes.forEach((cake) => {
-      combinedToppings.push(cake.toppings)
-    })
-    const flattenedArr = combinedToppings.flatMap(toppings => toppings)
-    const uniqueToppings = flattenedArr.filter((a,b) => {
-      return flattenedArr.indexOf(a) === b
-    })
-    return uniqueToppings
+    
   },
 
   // I need to make a grocery list. Please give me an object where the keys are each topping, and the values are the amount of that topping I need to buy.
@@ -69,18 +54,7 @@ const cakePrompts = {
   //    ...etc
   // }
   groceryList() {
-    const groceries = cakes.reduce((obj, cake) => {
-      
-      cake.toppings.forEach(item => {
-        if (!obj[item]) {
-          obj[item] = 0
-        }
-        obj[item] += 1
-      })
-      console.log("obj: ", obj)
-      return obj
-    }, {})
-    return groceries
+   
   }
 };
 
